@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Playlist Duration",
+  "version": "3.2.0",
+  "description": "YouTube再生リストの総再生時間を表示します",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
